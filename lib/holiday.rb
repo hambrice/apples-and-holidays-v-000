@@ -56,6 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, supply|
       
       holiday_fixed = holiday.to_s
+      
       holiday_fixed.each do |name|
           name.capitalize
       end
