@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_fixed.collect do |name|
           name.capitalize
         end
-        holiday_fixed.join
+        holiday_fixed.join(" ")
       else 
         holiday_fixed.capitalize
       end
