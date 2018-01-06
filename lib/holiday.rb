@@ -60,6 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_fixed.split("_")
         holiday_fixed.each do |name|
           name.capitalize
+          binding.pry
         end
         holiday_fixed.join
       else 
