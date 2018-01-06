@@ -58,7 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
       
       holiday_fixed = holiday.to_s
       if holiday_fixed.include? "_"
-        holiday_fixed.split("_").collect do |name|
+        holiday_fixed.split("_").map{| do |name|
           name.capitalize
           binding.pry
         end
