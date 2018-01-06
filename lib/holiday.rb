@@ -60,8 +60,9 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday_fixed.include? "_"
         puts "  #{holiday_fixed.split("_").map{|name| name.capitalize}.join(" ")}: #{supply.join(", ")}"
           binding.pry
-      end
+      else
       puts "  #{holiday_fixed.capitalize}: #{supply.join(", ")}"
+    end
   end
   end
 end
