@@ -57,7 +57,6 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_fixed = holiday.to_s.sub("_", " ")
       holiday_fixed = holiday_fixed.split
       holiday_fixed.each do |name|
-        if holiday_fixed.length > 1 
           name.capitalize!
       end
     end
