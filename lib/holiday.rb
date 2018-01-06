@@ -59,7 +59,6 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_fixed.each do |name|
           name.capitalize!
       end
-    end
       holiday_fixed.join
       puts "  #{holiday_fixed}: #{supply.join(", ")}"
   end
